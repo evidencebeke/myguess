@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+         }
+        h1{
+            color: black;
+            text-align: left;
+         }
+        #input{
+            background-color: white;
+            padding: 10px;
+            padding-right: 100px;
+            text-align: left;
+            border: none;
+        }
+        #lucky-message{
+            color: green;
+        }
+        #unlucky-message{
+            color: red;
+        }
+        #guess-button{
+            padding: 10px;
+            padding-left:50px;
+        }
+        .message{
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Guess a number between 10 and 100</h1>
+    <div id="align-center">
+        <p><input type="text" id="input" maxlength="3"></p>
+        <button id="guess-button">Submit your guess</button>
+        <p><span class="message" id="number-to-guess">The number to guess was</span></p>
+        <p><span class="message" id="lucky-message">You guessed right. Congratulations!</span></p>
+        <P><span class="message" id="unlucky-message">You guessed wrong. Better luck next time!</span></p>
+    </div>
+    <script src ="game.js"></script>
+</body>
+</html>
